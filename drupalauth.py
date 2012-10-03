@@ -37,7 +37,7 @@
 #        * python >=2.4 and the following python modules:
 #            * ice-python
 #            * MySQLdb
-#            * daemon (when run as a daemon)
+#            * python-daemon (when run as a daemon)
 #
 
 import sys
@@ -226,7 +226,7 @@ def do_main_program():
     if not slicedir:
         slicedir = ["-I/usr/share/Ice/slice", "-I/usr/share/slice"]
     else:
-        slicedir = ['-I' + slicedir, '-I/usr/share/slice']
+        slicedir = ['-I' + slicedir]
     Ice.loadSlice(' '.join(slicedir + [cfg.ice.slice]))
     import Murmur
     
