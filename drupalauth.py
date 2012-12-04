@@ -105,7 +105,7 @@ default = {'database':(('lib', str, 'MySQLdb'),
                        ('port', int, '4063')),
                        
             'log':(('level', int, logging.DEBUG),
-                   ('file', str, 'phpBB3auth.log'))}
+                   ('file', str, ''))}
  
 #
 #--- Helper classes
